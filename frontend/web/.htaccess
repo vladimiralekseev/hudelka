@@ -1,0 +1,32 @@
+#AuthType Basic
+#AuthName "Password Protected Area"
+#AuthUserFile  /var/www/appclub/data/www/appclub.gointeractive.com.ua/advanced/frontend/web/gousers
+#Require valid-user
+#satisfy any
+#deny from all
+#allow from 46.4.53.204
+#allow from 46.4.53.238
+
+<IfModule mod_rewrite.c>
+	RewriteEngine on
+	
+	# if a directory or a file exists, use it directly
+	RewriteCond %{REQUEST_FILENAME} !-f
+	RewriteCond %{REQUEST_FILENAME} !-d
+	
+	# otherwise forward it to index.php
+	RewriteRule . index.php
+</IfModule>
+
+<IfModule mod_mime.c>
+    AddType image/png .png
+</IfModule>
+
+<IfModule mod_expires.c>
+	ExpiresActive on
+	ExpiresDefault A0
+	ExpiresByType image/png "access plus 1 month"
+	ExpiresByType image/jpeg "access plus 1 month"
+	ExpiresByType image/gif "access plus 1 month"
+	ExpiresByType application/x-font-woff "access plus 1 month"
+</IfModule>
