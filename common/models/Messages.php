@@ -45,7 +45,8 @@ class Messages extends \yii\db\ActiveRecord
     
 	public function sendSMS($hash, $mess)
 	{
-		$request_url = "http://api.appclub.va.gointeractive.com.ua/ksExport/sms?key=501e4a141eb72835ddf9ebc7803fb5de&hash=".$hash."&mess=".urlencode($mess);
+		$request_url = "http://dl.appclub.com.ua/ksExport/sms?key=501e4a141eb72835ddf9ebc7803fb5de&hash=".$hash."&mess=".urlencode($mess);
+		//$request_url = "http://api.appclub.va.gointeractive.com.ua/ksExport/sms?key=501e4a141eb72835ddf9ebc7803fb5de&hash=f24e2710163086569bb8d5cea0d905f9&mess=123";
 		file_get_contents($request_url);
 	}
 }
