@@ -75,7 +75,8 @@ AppAsset::register($this);
 	
 		<?
 		
-		if($_SERVER["REQUEST_URI"] == "/"){
+		//echo "<pre>"; var_dump($_SERVER); echo "</pre>";
+		if($_SERVER["REQUEST_URI"] == "/" || preg_match("/^\/\?/", $_SERVER["REQUEST_URI"])){
 			echo $this->render('header-page-main.php');
 		}else{
 			echo $this->render('header-page.php');
@@ -156,6 +157,26 @@ AppAsset::register($this);
 	</div>
 </div>
 
+<div class="popup price10-popup" id="price10-popup">
+	<div class="popup-fon"></div>
+	<div class="popup-border">
+		<div class="popup-data">
+			<a class="popup-close">x</a>
+			<h3>10шт за 1500 грн</h3>
+			<div class="rows">
+				<div class="row">
+					<div class="col-xs-12">
+						<div class="form-data">
+						У Вас есть уникальная возможность купить сиропы по супер-цене 150 грн. при заказе от 10 и более штук. Более подробная информация по телефону  +38 (096) 877 86 17
+						</div>
+					</div>
+				</div>
+			</div>
+
+		</div>
+	</div>
+</div>
+
 
 <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
@@ -206,6 +227,12 @@ $(function(){
 })
 </script>
 <?}?>
+
+<script>
+$(function(){
+	price10.init($("#price10"))
+})
+</script>
 
 </body>
 </html>

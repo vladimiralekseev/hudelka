@@ -955,7 +955,7 @@ a.btn:active {}
 .composition p {font:15px/22px Arial;text-transform:none;color:#000;}
 .composition .it {clear:both;over-flow:hidden;margin:0 0 0px;padding:30px 0 0;}
 
-.bottls {padding:50px 0 170px 60px;clear:both;position:relative;z-index:999;}
+.bottls {padding:50px 0 120px 60px;clear:both;position:relative;z-index:999;}
 .bottls .it {display:inline-block;margin:0 0 0 -30px;position:relative;text-align:center;width:382px;}
 .bottls .it .img {margin:0 0 0px;}
 .bottls .it-1 {z-index:10;}
@@ -981,7 +981,7 @@ a.btn:active {}
 .result-form {padding:250px 0;}
 
 .star-text {clear:both;font-size:14px;padding:5px 0 0 0px;display:block;}
-.star-text-2 {position:relative;top:-130px;clear:both;font-size:14px;padding:5px 130px 0 130px;text-transform:none;line-height:18px;font-weight:bold;color:#1f6d6d;}
+.star-text-2 {position:relative;top:-80px;clear:both;font-size:14px;padding:5px 130px 0 130px;text-transform:none;line-height:18px;font-weight:bold;color:#1f6d6d;}
 .star-text-3 {font-size:15px;padding:35px 100px 0 80px;text-transform:none;line-height:20px;} 
 .star-text-4 {padding:10px 0 0 0px;text-transform:none;line-height:18px;font-size:17px;}
 .star-text-5 {clear:both;padding:25px 0 20px 30px;text-transform:none;}
@@ -1079,6 +1079,11 @@ input.error {border:1px solid red;background:rgba(255,0,0,0.2);}
 .link-to-up a {position:absolute;background:#f5f6f7;border-radius:5px;display:block;z-index:100;margin:0;width:70px;height:50px;padding:8px 0 0;font-size:13px;line-height:16px;text-align:center;font-weight:bold;text-decoration:none;text-transform:uppercase;}
 .link-to-up a .name {display:block;color:#97a0ad;text-transform:uppercase;}
 
+.price-new-10-block {width:400px;text-align:center;margin:0 0 130px;}
+.price-new-10-block .btn {display:inline-block;}
+
+.price-new-10 {font:bold 50px/50px 'hagin_caps_mediumregular', Arial, sans-serif;color:#fff;margin:0 0 5px;text-shad-ow:0px 0px 1px #000;}
+.price-new-10 span {font-size:30px;font-weight:normal;} 
 
 /* ####################################################################################################
 [5 Jquery/javascript plugins]

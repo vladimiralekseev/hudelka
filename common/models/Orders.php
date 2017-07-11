@@ -59,6 +59,11 @@ class Orders extends \yii\db\ActiveRecord
         return 'orders';
     }
 
+	public function getSpending()
+	{
+	    return $this->hasMany(Spending::className(), ['order_id' => 'id']);
+	}
+	
     /**
      * @inheritdoc
      */

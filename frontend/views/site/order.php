@@ -110,6 +110,8 @@ use yii\bootstrap\ActiveForm;
             <?php ActiveForm::end(); ?>
 
           </div>
+          
+          <div style="clear:both;"><h4 style="color:#fff;">Отправка заказов в Россию и страны СНГ ТОЛЬКО ПО ПРЕДОПЛАТЕ!!!</h4></div>
         </div>
        <?}?>
       </div>

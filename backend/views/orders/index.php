@@ -84,6 +84,20 @@ $this->params['breadcrumbs'][] = $this->title;
 				return Orders::getStatusValue($model->status);
 			},
 		],
+        [
+        	//'attribute'=>'status',
+        	//'filter'=>Orders::getStatusList(),
+			'value'=>function($model){
+        		$html = '';
+        		$ar = [];
+		        foreach($model->spending as $spend)
+		        {
+		        	$ar[] = Html::a(($spend->summ_debet - $spend->summ).'грн', ['/spending/view', 'id'=>$spend->id], ['data-pjax'=>0]);
+		        }
+				return implode(', ', $ar);
+			},
+			'format'=>'raw',
+		],
         'count',
         'fio',
         'phone',

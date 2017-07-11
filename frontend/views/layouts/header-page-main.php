@@ -62,5 +62,9 @@
         	</div>
         </div>
         <div class="star-text-2">* Результат зависит от индивидуального восприятия и может отличаться.<br>Сироп не является лекарственным средством.</div>
-        
+        <div class="fixed">
+        	<div class="price-new-10-block">
+	        	<div class="price-new-10">1500 <span>грн / 10 шт</span> <a class="btn btn_red" href="#" id="price10">Подробнее</a></div>
+	        </div>
+        </div>
       </div>

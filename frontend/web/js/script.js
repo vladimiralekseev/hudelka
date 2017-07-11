@@ -109,11 +109,25 @@ var guaranty =
 		
 	}
 }
+
+var price10 =
+{
+	init: function()
+	{
+		$("#price10").click(function(){
+			popup.open($("#price10-popup"))
+			
+			return false;
+		})
+		
+	}
+}
+
 var phoneOrder =
 {
 	init: function()
 	{
-		$("#zakazat-zvonok").click(function(){
+		$("#zakazat-zvonok, .zakazat-zvonok-10").click(function(){
 			popup.open($("#order-phone-popup"))
 			
 			return false;
@@ -132,6 +146,7 @@ var popup =
 	open: function(ob)
 	{
 		var _self = this;
+		_self.close()
 		_self.ob = ob;
 		_self.ob.show();
 		_self.ob.find(".popup-close").click(function(){
@@ -143,7 +158,8 @@ var popup =
 	close: function()
 	{
 		var _self = this;
-		_self.ob.hide();
+		if(_self.ob)
+			_self.ob.hide();
 		return false;
 	}
 	
