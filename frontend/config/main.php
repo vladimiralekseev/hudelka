@@ -22,6 +22,7 @@ return [
         	'showScriptName'=>false,
       		'suffix' => '/',
             'rules'=>array(
+            	'/'					=> 'site/index',
             	'comments'					=> 'comments/index',
       			'health'					=> 'articles/index',
       			'health/<code:[\w\d\-]+>'	=> 'articles/detail',
