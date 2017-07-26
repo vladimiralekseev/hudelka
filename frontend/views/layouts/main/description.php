@@ -17,7 +17,7 @@
 					<h3>100 % НАТУРАЛЬНЫЙ ПРОДУКТ</h3>
 					<p>Не имеет побочных эффектов, не наносит вреда здоровью.</p>
 				</div>
-				<div class="col-sm-6">
+				<div class="col-sm-6 right">
 			    	<img src="/i/syrup-diet-2.png">
 					<div class="slogan">Эффективность доказана *<br>Уникальное предложение</div>
 					<div class="text-center">

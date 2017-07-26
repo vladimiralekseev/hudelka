@@ -199,7 +199,7 @@ button.btn-big {padding-top:0;}
 
 .modal-guaranty h3 {text-align:center;font:30px 'hagin_caps_mediumregular', Arial, sans-serif;margin:0;}
 
-.bottls {padding:50px 0 60px 60px;clear:both;position:relative;z-index:999;}
+.bottls {text-align:center;padding:50px 0 60px;clear:both;position:relative;z-index:999;}
 .bottls .it {display:inline-block;margin:0 0 0 -30px;position:relative;text-align:center;width:382px;}
 .bottls .it .img {margin:0 0 0px;}
 .bottls .it-1 {z-index:10;}
@@ -228,7 +228,7 @@ button.btn-big {padding-top:0;}
 .description .slogan {font:bold 30px/1.2 'five_minutesregular', Arial, sans-serif;margin: 0 0 39px;padding: 0 65px 0 80px;color: #fa0012;}
 .description .star-text-3 {font-size:12px;margin:50px 0 0;padding:0 50px;}
 
-.info {background: #fff;padding: 20px 80px 30px 105px;color:#5f4535;}
+.info {background: #fff;padding: 20px 80px 30px 80px;color:#5f4535;}
 .info h2 {font:normal 36px/42px 'hagin_caps_mediumregular', Arial, sans-serif;color:#1f6c6c;text-align:center;margin: 0 0 20px;}
 .info h3 {font:bold 16px/24px Arial, Helvetica, sans-serif;color: #000;margin: 0 0 8px;text-transform: uppercase;}
 .info img {float:left;margin:0 20px 20px 0;}
@@ -254,7 +254,6 @@ button.btn-big {padding-top:0;}
 .composition h3, .composition p {margin-left:170px;}
 .composition p {font:15px/22px Arial;text-transform:none;color:#000;}
 .composition .it {clear:both;over-flow:hidden;margin:0 0 0px;padding:30px 0 0;}
-
 
 .page {background:#338d66 url(../img/comments-fon.png);padding:70px 120px;}
 .page h1 {font:60px 'hagin_caps_mediumregular', Arial, sans-serif;text-align:center;color:#1f6c6c;margin:0 0 30px;}
@@ -339,3 +338,93 @@ button.btn-big {padding-top:0;}
 .timer {padding: 3px 15px 15px 6px;min-height: 139px;}
 .timer__txt {font-size: 10px;line-height: 15px;font-weight: normal;font-style: normal;display:block;vertical-align: top;padding: 0 0 12px;color: #fff;display: block;text-transform: uppercase;}
 .timer__txt em {font-size: 12px;line-height: 15px;font-weight: normal;font-style: normal;display:block;vertical-align: top;padding: 0 ;color: #fff;}
+
+
+@media only screen and (max-width: 1200px)
+{
+	.header-girl {background-position-x:-220px;width:554px;}
+	.header-decor01 {left:380px;}
+	.header-note {margin-left:-105px;}
+	
+	.bottls .it {width:350px;}
+	
+	.description .promo {padding-left:100px;padding-right:100px;}
+	
+	.reviews {padding:20px 30px;}
+	.reviews h2 {font-size:40px;text-align:center;}
+	.reviews-list .reviews-list-item:first-child {display:none;}
+}
+
+@media only screen and (max-width: 1100px)
+{
+	.header-girl {background-position-x:-320px;width:454px;}
+	.header-decor01 {left:280px;}
+	.header-note {margin-left:-205px;padding-left:207px;font-size:12px;}
+	.header-note .star-text {font-size:12px;line-height:1;text-transform:none;}
+	.header-right {padding: 0px 20px;}
+	
+	.bottls .it {width:330px;}
+	
+	.description .promo {padding-left:70px;padding-right:70px;}
+}
+
+@media only screen and (max-width: 1000px)
+{
+	.bottls .it {width:380px;}
+	.bottls .it-2 {display:none;}
+	
+	.description .promo {padding-left:30px;padding-right:30px;}
+	
+	.order {padding:20px 30px;}
+}
+
+@media only screen and (max-width: 900px)
+{
+	.header-girl {background-position-x:-420px;width:354px;}
+	.header-decor01 {left:180px;}
+	.header-note {margin-left:-305px;padding-left:307px;font-size:12px;}
+	.header-note .star-text {display:none;}
+	.header-right {padding: 0px 10px;}
+	.header-ttl {display:none;}
+	.logo small {font-size:30px;}
+	
+	.fixed {padding: 0px;}
+	
+	.price-new-10-block {padding:0 0 40px;margin:0 ;text-align:center;}
+	.description {background:#eff0eb;}
+	.description .promo {background:none;padding:30px;}
+	.description .promo .right {text-align:center;}
+	.description .decor {top:-130px;}
+	.description .slogan {padding:0;}
+}
+
+@media only screen and (max-width: 768px)
+{
+	.bottls .it {width:350px;}
+	
+	.info {padding:20px 30px;}
+	.info h2 {font-size:30px;line-height:1;}
+	
+	.composition {padding:20px 30px;}
+	.composition h2 {font-size:40px;}
+	
+	.page {background:none;padding:0;}
+	.page .grad {padding:20px 30px;}
+	
+	.text-important {padding:20px 30px;}
+	
+	.reviews h2 {font-size:30px;text-align:center;}
+}
+
+@media only screen and (max-width: 720px)
+{
+	.header-sticker {display:none;}
+	.header-girl {display:none;}
+	.header-decor01 {display:none;}
+	.header-note {display:none;}
+}
+
+@media only screen and (max-width: 680px)
+{
+	.reviews-list .reviews-list-item {width:auto;border:none;}
+}
