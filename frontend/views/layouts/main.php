@@ -20,14 +20,14 @@ $OrderForm = Yii::$app->params["OrderForm"];
 AppAsset::register($this);
 
 $menuItems = [
-    ['label' => 'сироп', 'url' => ['site/index', '#'=>'']],
-    ['label' => 'польза', 'url' => ['site/index', '#'=>'effect']],
-    ['label' => 'экспертное мнение', 'url' => ['site/index', '#'=>'expert']],
-    ['label' => 'состав', 'url' => ['site/index', '#'=>'composition']],
+    ['label' => 'Cироп', 'url' => ['site/index', '#'=>'']],
+    ['label' => 'Польза', 'url' => ['site/index', '#'=>'effect']],
+    ['label' => 'Экспертное мнение', 'url' => ['site/index', '#'=>'expert']],
+    ['label' => 'Состав', 'url' => ['site/index', '#'=>'composition']],
     ['label' => 'Свойства', 'url' => ['site/index', '#'=>'properties']],
-    ['label' => 'отзывы', 'url' => ['site/index', '#'=>'reviews']],
+    ['label' => 'Отзывы', 'url' => ['site/index', '#'=>'reviews']],
     ['label' => 'Как заказать', 'url' => ['site/index', '#'=>'how-to-order']],
-    ['label' => 'заказ и доставка', 'url' => ['site/index', '#'=>'order']],
+    ['label' => 'Заказ и доставка', 'url' => ['site/index', '#'=>'order']],
 ];
 ?>
 <?php $this->beginPage() ?>
@@ -48,12 +48,22 @@ $menuItems = [
 </head>
 <body>
 <?php $this->beginBody() ?>
+<?= $this->render('main/menu-main', compact('menuItems')) ?>
+
 <div id="body">
     <?= Menu::widget([
         'options' => ['class' => 'menu-top'],
         'encodeLabels' => false,
         'items' => $menuItems
     ]);?>
+    <div class="header">
+		<div class="menu-up-right">
+			<a href="tel:1-877-368-3782"><span class="icon hudelka-phone"></span></a>
+		</div>
+		<a href="#" class="menu-bars-opener" id="menu-bars-opener"><span class="icon hudelka-bars"></span></a>
+		<a href="/" class="logo">Стройнитин</a> 
+				
+	</div>
 	<div class="fixed">
 		<div class="header-part">
     		<div class="header-left">
@@ -110,10 +120,28 @@ $menuItems = [
 		<?= $this->render('main/how-we-work') ?>
 		<?= $this->render('main/order') ?>
 			
+		<div class="zakazat-zvonok" id="zakazat-zvonok"><img src="/i/zakazat_zvonok.png"></div>
     </div>
     <div id="holder"></div>
 </div>
-    
+<div class="footer">
+	<div class="fixed">
+	<div class="rows">
+	<div class="row">
+		<div class="col-sm-6">
+			<a target="_blank" href="/policy/">Политика конфиденциальности</a>. 
+        	<p>Производитель: ФОП Теплова С.В.</p>
+        	<p>Препарат изготовлен на мощностях: ООО «ЗДОРОВАЯ ЕДА»,<br> Украина, 61103, м. Харьков, пр. Ленина 47.</p>
+		</div>
+		<div class="col-sm-6 text-right">
+			<p class="contact-phone-footer">Контактный телефон <b>+38 (096) 877 86 17</b>
+  				<span>Email: <a href="mailto:stroynitin@gmail.com">stroynitin@gmail.com</a></span>
+  			</p>
+  		</div>
+	</div>
+	</div>
+	</div>
+</div>
     
 <?php //= $content ?>
 

@@ -1,3 +1,4 @@
+<a name="order" id="order"></a>
 <div class="order">
 	<h2>Попрощайтесь с лишними килограммами <span class="mark-new">навсегда!</span></h2>
 	<div class="row">

@@ -1,0 +1,49 @@
+@charset "UTF-8";
+
+@font-face {
+  font-family: "hudelka";
+  src:url("fonts/hudelka.eot");
+  src:url("fonts/hudelka.eot?#iefix") format("embedded-opentype"),
+    url("fonts/hudelka.woff") format("woff"),
+    url("fonts/hudelka.ttf") format("truetype"),
+    url("fonts/hudelka.svg#hudelka") format("svg");
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+[data-icon]:before {
+  font-family: "hudelka" !important;
+  content: attr(data-icon);
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-variant: normal !important;
+  text-transform: none !important;
+  speak: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+[class^="hudelka-"]:before,
+[class*=" hudelka-"]:before {
+  font-family: "hudelka" !important;
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-variant: normal !important;
+  text-transform: none !important;
+  speak: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.hudelka-bars:before {
+  content: "\61";
+}
+.hudelka-phone:before {
+  content: "\62";
+}
+.hudelka-check:before {
+  content: "\63";
+}

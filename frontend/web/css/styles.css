@@ -73,7 +73,7 @@ div.select:after {display:block;content:" ";top:19px;right:10px;position:absolut
 div.select:hover input {}
 
 #body {position:relative;min-height:100%;height:auto !important;height:100%;margin:0 auto;}
-#holder {height:100px;clear:both;}
+#holder {height:0;clear:both;}
 #footer {position:relative;width:100%;margin-top:-100px;}
 
 .fixed {max-width:1180px;padding:0 20px;margin:0 auto;position:relative;}
@@ -159,6 +159,18 @@ button.btn-big {padding-top:0;}
     -ms-transform: translate(-50%, -50%) !important;
     transform: translate(-50%, -50%) !important;
 }
+
+.footer {padding:20px 0 0;}
+.footer p {margin:0;font-size:12px;line-height:15px;color:#000;font-weight: bold;}
+.footer a {color:#5f4535;}
+.footer a:hover {text-decoration:underline;}
+
+.contact-phone-footer {font-size:15px;line-height:30px;color:#5f4535;text-align:right;padding:0 0 20px;}
+.contact-phone-footer b {font-size:30px;line-height:40px;display:block;color:#444;} 
+.contact-phone-footer span {color:#444;}
+.contact-phone-footer span a {color:#444;}
+
+.zakazat-zvonok {position:absolute;top:100px;left:500px;cursor:pointer;z-index:100;}
 
 .menu-top, .menu-top li {margin:0;padding:0;}
 .menu-top {background:#3e3028;border-bottom:1px solid #000;text-align:center;}
@@ -283,9 +295,9 @@ button.btn-big {padding-top:0;}
 .text-important h2 {font:normal 36px/42px 'hagin_caps_mediumregular', Arial, sans-serif;color: #1f6c6c;text-align:center;margin: 0 0 20px;}
 .text-important p {font-size:14px;line-height:19px;margin:0 0 10px;}
 
-.how-we-work {text-align:center;padding:0 0 40px 0;background:#592816 url('../img/how-we-work-fon.png') repeat 0 0;box-shadow: 0 10px 10px rgba(0,0,0,0.5);}
+.how-we-work {text-align:center;padding:0 0 20px 0;background:#592816 url('../img/how-we-work-fon.png') repeat 0 0;box-shadow: 0 10px 10px rgba(0,0,0,0.5);}
 .how-we-work h2 {color:#4b2a04;background:#fce38e;font:bold 50px/50px 'hagin_caps_mediumregular', Arial, sans-serif;padding:20px 0;margin:0 0 30px;}
-.how-we-work .it {display:inline-block;color:#fff;padding:0 80px;width:360px;position:relative;}
+.how-we-work .it {display:inline-block;color:#fff;padding:0 80px;margin:0 0 20px;width:360px;position:relative;}
 .how-we-work .it img {border-radius:100px;border:5px solid #fce38e;}
 .how-we-work .it:after {position:absolute;top:60px;left:-44px;display:block;content:"";width:87px;height:73px;background:url('../img/how-we-work-sep.png') no-repeat 0 0;}
 .how-we-work .it:first-child:after {display:none;}
@@ -327,7 +339,7 @@ button.btn-big {padding-top:0;}
 .order-form input {width:100%;}
 .order-form .btn-big {width:100%;}
 
-.countdownHolder {display: block;vertical-align: top;width: 408px;margin: 0 auto;overflow: hidden;}
+.countdownHolder {display: block;vertical-align: top;width:364px;overflow: hidden;}
 *+html .countdownHolder {display: inline;}
 .countHours, .countMinutes {float: left;overflow: hidden;margin: 0 14px 0 0;}
 .countSeconds {float: left;overflow: hidden;}
@@ -335,10 +347,44 @@ button.btn-big {padding-top:0;}
 .countDiv {float: left;width: 25px;height: 76px;display: none;}
 .countdownHolder .wrap {width: 112px;display: block;overflow: hidden;padding: 0 0 7px;}
 
-.timer {padding: 3px 15px 15px 6px;min-height: 139px;}
+.timer {padding: 3px 0 15px;min-height: 139px;}
 .timer__txt {font-size: 10px;line-height: 15px;font-weight: normal;font-style: normal;display:block;vertical-align: top;padding: 0 0 12px;color: #fff;display: block;text-transform: uppercase;}
 .timer__txt em {font-size: 12px;line-height: 15px;font-weight: normal;font-style: normal;display:block;vertical-align: top;padding: 0 ;color: #fff;}
 
+
+.menu-main {width:100%;margin:0 0 0 -100%;position:fixed;top:0;right:0;bottom:0;left:0;z-index:999998;background:#3e3028;
+	-webkit-transition: margin .3s ease-in-out;
+	-moz-transition: margin .3s ease-in-out;
+	-o-transition: margin .3s ease-in-out;
+	transition: margin .3s ease-in-out;
+}
+.menu-main ul, .menu-main li {padding:0;margin:0;}
+.menu-main ul {padding:0 20px;position:relative;z-index:10;overflow-y:auto;max-height:100%;}
+.menu-main li {border-top:1px solid rgba(255,255,255, 0.1);}
+.menu-main li a {position:relative;z-index:11;margin:-2px -20px;padding:10px 15px;display:block;color:#fff;font-weight:bold;border-left:3px solid transparent;}
+.menu-main li a:hover, .menu-main li.active a {}
+.menu-main li:before {display:none;}
+.menu-main .mobile a {color:#b5c7e3;font-weight:normal;}
+
+
+.header {display:none;z-index:999995;height:50px;padding:5px 5px 5px 0;background:#3e3028;border-bottom:1px solid #ced2d5;margin:0 0 10px;position:fixed;width:100%;
+	-webkit-transition: margin .3s ease-in-out;
+	-moz-transition: margin .3s ease-in-out;
+	-o-transition: margin .3s ease-in-out;
+	transition: margin .3s ease-in-out;
+}
+.header .menu-up-right {float:right;}
+.header .menu-up-right a {font-size:20px;padding:10px;display:inline-block;color:#dbc5b8;position:relative;}
+.header .menu-up-right a b {position:absolute;border-radius:20px;background:#60b234;color:#fff;font-size:10px;display:block;width:15px;height:15px;line-height:15px;text-align:center;bottom:9px;right:2px;}
+.header .menu-bars-opener {font-size:20px;color:#dbc5b8;padding:10px;display:inline-block;}
+.header .logo img {height:30px;}
+.header .logo img.logo-short {display:none;height:30px;}
+.header-holder {height:70px;}
+
+
+@media only screen and (min-width: 1500px) {
+	.zakazat-zvonok {position:fixed;top:100px;left:auto;right:10px;cursor:pointer;z-index:1000000;}	
+}
 
 @media only screen and (max-width: 1200px)
 {
@@ -353,6 +399,8 @@ button.btn-big {padding-top:0;}
 	.reviews {padding:20px 30px;}
 	.reviews h2 {font-size:40px;text-align:center;}
 	.reviews-list .reviews-list-item:first-child {display:none;}
+	
+	.zakazat-zvonok {left:400px;}
 }
 
 @media only screen and (max-width: 1100px)
@@ -366,6 +414,8 @@ button.btn-big {padding-top:0;}
 	.bottls .it {width:330px;}
 	
 	.description .promo {padding-left:70px;padding-right:70px;}
+	
+	.zakazat-zvonok {left:300px;}
 }
 
 @media only screen and (max-width: 1000px)
@@ -375,7 +425,7 @@ button.btn-big {padding-top:0;}
 	
 	.description .promo {padding-left:30px;padding-right:30px;}
 	
-	.order {padding:20px 30px;}
+	.order {padding:20px 10px;}
 }
 
 @media only screen and (max-width: 900px)
@@ -396,9 +446,12 @@ button.btn-big {padding-top:0;}
 	.description .promo .right {text-align:center;}
 	.description .decor {top:-130px;}
 	.description .slogan {padding:0;}
+	
+	.header-sticker {left:10px;top:10px;}
+	.zakazat-zvonok {left:200px;top:160px;}
 }
 
-@media only screen and (max-width: 768px)
+@media only screen and (max-width: 767px)
 {
 	.bottls .it {width:350px;}
 	
@@ -414,6 +467,15 @@ button.btn-big {padding-top:0;}
 	.text-important {padding:20px 30px;}
 	
 	.reviews h2 {font-size:30px;text-align:center;}
+	
+	.order {text-align:center;}
+	.countdownHolder {margin: 0 auto;}
+	
+	.footer {text-align:center;}
+	.footer div, .footer p {text-align:center;}
+	
+	.header {display:block;}
+	.menu-top {display:none;}  
 }
 
 @media only screen and (max-width: 720px)
