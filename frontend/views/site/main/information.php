@@ -1,5 +1,5 @@
+<a name="properties" id="properties"></a>
 <div class="info">
-	<a name="properties" id="properties"></a>
 	<h2>Естественный способ восстановить нормальную работу всего организма. вы будете меньше есть, больше двигаться и ощущать радость жизни!</h2>
 	<div class="row">
 		<div class="col-sm-6">

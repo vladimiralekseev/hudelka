@@ -1,5 +1,5 @@
-<div class="reviews">
-        <a name="reviews" id="reviews"></a>
+<a name="reviews" id="reviews"></a>
+    <div class="reviews">
         <h2>Отзывы</h2>
               <ul class="reviews-list">
                 <li class="reviews-list-item">
@@ -7,7 +7,7 @@
                     <div class="reviews-frame">
                       <strong class="reviews-author">Алина 29 - похудела на 23 кг.*</strong>
                       <div class="reviews-img">
-                        <img src="_jk_files/before_after_122.jpg" alt="" height="171" width="259">
+                        <img src="/i/before_after_122.jpg" alt="" height="171" width="259">
                       </div>
                       <ul class="reviews-val">
                         <li>
@@ -27,7 +27,7 @@
                     <div class="reviews-frame">
                       <strong class="reviews-author">Ирина 21 - похудела на 18 кг.*</strong>
                       <div class="reviews-img">
-                        <img src="_jk_files/before_after_222.jpg" alt="" height="171" width="259">
+                        <img src="/i/before_after_222.jpg" alt="" height="171" width="259">
                       </div>
                       <ul class="reviews-val">
                         <li>
@@ -47,7 +47,7 @@
                     <div class="reviews-frame">
                       <strong class="reviews-author">Инга 35 - похудела на 28 кг.*</strong>
                       <div class="reviews-img">
-                        <img src="_jk_files/before_after_322.jpg" alt="" height="171" width="259">
+                        <img src="/i/before_after_322.jpg" alt="" height="171" width="259">
                       </div>
                       <ul class="reviews-val">
                         <li>

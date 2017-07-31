@@ -29,6 +29,8 @@ $menuItems = [
     ['label' => 'Как заказать', 'url' => ['site/index', '#'=>'how-to-order']],
     ['label' => 'Заказ и доставка', 'url' => ['site/index', '#'=>'order']],
 ];
+
+$isMainPage = $this->context->module->controller->id == 'site' && $this->context->action->id == 'index';
 ?>
 <?php $this->beginPage() ?>
 <!DOCTYPE html>
@@ -58,30 +60,35 @@ $menuItems = [
     ]);?>
     <div class="header">
 		<div class="menu-up-right">
-			<a href="tel:1-877-368-3782"><span class="icon hudelka-phone"></span></a>
+			<a href="tel:+38-096-877-86-17"><span class="icon hudelka-phone"></span></a>
 		</div>
 		<a href="#" class="menu-bars-opener" id="menu-bars-opener"><span class="icon hudelka-bars"></span></a>
-		<a href="/" class="logo">Стройнитин</a> 
+		<div class="logo">Стройнитин</div> 
 				
 	</div>
+	<div class="header-holder"></div>
 	<div class="fixed">
 		<div class="header-part">
     		<div class="header-left">
     			<div class="header-decor01"><img src="/i/decor0122-2.png" alt=""></div>
     			<div class="header-girl"></div>
     			<div class="header-sticker"></div>
+    			<?php if ($isMainPage) {?>
     			<div class="header-note">
                 	<div>Инновационная формула нового натурального средства для похудения, без побочных эффектов и вреда для здоровья. ЗДОРОВОЕ ПОХУДЕНИЕ – НЕ МЕЧТА, А РЕАЛЬНОСТЬ!</div> 
     				<span class="star-text">* Результат зависит от индивидуального восприятия и может отличаться. Сироп не является лекарственным средством.</span>
     			</div>
+    			<?php }?>
     		</div>
 			<div class="header-right">
 				<h1 class="logo"><small>Сироп для похудения</small><br/>СТРОЙНИТИН</h1>
+				<?php if ($isMainPage) {?>
 				<ul class="list">
                     <li>Сжигает жир</li>
                     <li>Снижает аппетит</li>
                     <li>Тонизирует и омолаживает</li>
 				</ul>
+				<?php }?>
 				<h2 class="header-ttl">Здоровое похудение в каждой ложке</h2>
 				<ul class="price">
                     <li>
@@ -95,7 +102,7 @@ $menuItems = [
                       <span class="old bottom j-s_old_price_curs">580 грн</span>
                     </li>
 				</ul>
-				<div class="text-center">
+				<div class="text-center order-now">
 					<a class="btn btn-red btn-big" href="#order">Заказать сейчас</a>
 				</div>
 				<div class="guaranty" id="guaranty-open"><a class="add-quote" data-toggle="modal" data-target="#guaranty" href="#guaranty"><img src="/i/guaranty-new.png" /></a></div>
@@ -107,17 +114,16 @@ $menuItems = [
                 Eсли Вы приобрели препарат, но передумали его использовать Вы можете вернуть его в течении 1 месяца и получить обратно его полную стоимость, за исключением затрат на пересылку. При этом товар не должен быть вскрыт или использован. Если Вы возвращаете второй или третий флакон, который покупали по скидочной цене, тогда возвращается скидочная стоимость флакона, за исключением затрат на пересылку.
 				<?php Modal::end();?>
 			</div>
-			
-			<?= $this->render('main/bottls') ?>
+			<?php if ($isMainPage) {?>
+				<?= $this->render('main/bottls') ?>
+			<?php }?>
 		</div>
+		<?php if (!$isMainPage) {?>
+			<div class="header-note-line"></div>
+		<?php }?>
+    	<?= $content ?>
+    	
 		
-		<?= $this->render('main/description') ?>
-		<?= $this->render('main/information') ?>
-		<?= $this->render('main/composition') ?>
-		<?= $this->render('main/comments') ?>
-		<?= $this->render('main/text-important') ?>
-		<?= $this->render('main/reviews') ?>
-		<?= $this->render('main/how-we-work') ?>
 		<?= $this->render('main/order') ?>
 			
 		<div class="zakazat-zvonok" id="zakazat-zvonok"><img src="/i/zakazat_zvonok.png"></div>
@@ -142,8 +148,6 @@ $menuItems = [
 	</div>
 	</div>
 </div>
-    
-<?php //= $content ?>
 
 
 <script>

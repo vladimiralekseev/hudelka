@@ -1,3 +1,7 @@
+<?php 
+
+use yii\bootstrap\Modal;
+?>
 <div class="bottls">
 	<div class="it it-1">
 		<div class="img"><img src="/i/b-1-3.png"></div>
@@ -21,6 +25,14 @@
 <div class="star-text-2">* Результат зависит от индивидуального восприятия и может отличаться.<br>Сироп не является лекарственным средством.</div>
 <div class="price-new-10-block">
 	<div class="price-new-10">1500 <span>грн / 10 шт</span><br/>
-		<a class="btn btn-red btn-big" href="#" id="price10">Подробнее</a>
+		<a class="btn btn-red btn-big" data-toggle="modal" data-target="#opt" href="#opt">Подробнее</a>
 	</div>
-</div>      
+</div>
+
+<?php Modal::begin([
+    'header' => '<h3>'.\Yii::t('app', '10шт за 1500 грн').'</h3>',
+    'id' => 'opt',
+    'options' =>['class'=>'modal-opt'],
+]);?>
+У Вас есть уникальная возможность купить сиропы по супер-цене 150 грн. при заказе от 10 и более штук. Более подробная информация по телефону  +38 (096) 877 86 17
+<?php Modal::end();?>

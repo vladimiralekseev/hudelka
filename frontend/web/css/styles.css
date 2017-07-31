@@ -51,6 +51,8 @@ textarea {resize:vertical;}
 textarea.form-control {height:auto !important;line-height:18px !important;}
 input:focus, select:focus, option:focus, textarea:focus {background:#fff}
 
+img {max-width:100%;}
+
 h1, h2.h1 {font:700 30px/40px Raleway, Arial, sans-serif;color:#333;margin:0 0 20px 0px;padding:0;}
 h2, h1.h2 {font:600 18px Raleway, Arial, sans-serif;color:#333;margin:0 0 10px 0px;padding:0;}
 h3 {font:bold 15px/24px Arial, Helvetica, sans-serif;color:#333;margin:0;padding:0;text-transform:uppercase;}
@@ -141,8 +143,24 @@ div.select:hover input {}
     background: linear-gradient(top, #ff1627 0%, #f40c1d 100%) !important;
 }
 
-.btn-big {height:60px;padding-top:15px;}
-button.btn-big {padding-top:0;}
+
+.btn-green {box-shadow:0 2px 10px rgba(0,0,0,0.5);border-bottom:2px solid #127b40;padding:15px 40px;background:#1cb15c;color:#fff !important;font:22px 'hagin_caps_mediumregular', Arial, sans-serif !important;text-transform:uppercase !important;
+	background: -moz-linear-gradient(top, #1dbf63 0%, #18a455 100%) !important;
+    background: -webkit-linear-gradient(top, #1dbf63 0%, #18a455 100%) !important;
+    background: -o-linear-gradient(top, #1dbf63 0%, #18a455 100%) !important;
+    background: -ms-linear-gradient(top, #1dbf63 0%, #18a455 100%) !important;
+    background: linear-gradient(top, #1dbf63 0%, #18a455 100%) !important;
+}
+.btn-green:hover {
+	background: -moz-linear-gradient(top, #23c669 0%, #1dac5b 100%) !important;
+    background: -webkit-linear-gradient(top, #23c669 0%, #1dac5b 100%) !important;
+    background: -o-linear-gradient(top, #23c669 0%, #1dac5b 100%) !important;
+    background: -ms-linear-gradient(top, #23c669 0%, #1dac5b 100%) !important;
+    background: linear-gradient(top, #23c669 0%, #1dac5b 100%) !important;
+}
+
+.btn-big {height:60px;padding-top:0;padding-bottom:0;line-height:60px;}
+
 
 .centred {position:absolute;top:50%;left:50%;
 	-moz-transform: translate(-50%, -50%);
@@ -189,6 +207,8 @@ button.btn-big {padding-top:0;}
 .header-note .star-text {font-size:12px;}
 .header-decor01 {position:absolute;z-index:3;left:480px;top:271px;}
 
+.header-note-line {height:10px;background:#ffc600;clear:both;}
+
 .header-left {float:left;}
 .header-right {overflow:hidden;padding:0 30px;}
 
@@ -211,15 +231,15 @@ button.btn-big {padding-top:0;}
 
 .modal-guaranty h3 {text-align:center;font:30px 'hagin_caps_mediumregular', Arial, sans-serif;margin:0;}
 
-.bottls {text-align:center;padding:50px 0 60px;clear:both;position:relative;z-index:999;}
-.bottls .it {display:inline-block;margin:0 0 0 -30px;position:relative;text-align:center;width:382px;}
+.bottls {text-align:center;padding:50px 0 0;clear:both;position:relative;z-index:999;}
+.bottls .it {display:inline-block;margin:0 0 60px -30px;position:relative;text-align:center;width:382px;}
 .bottls .it .img {margin:0 0 0px;}
 .bottls .it-1 {z-index:10;}
 .bottls .it-2 {z-index:5;}
 .bottls .it-1 img {margin:0 0 0px -20px;}
 .bottls .it-2 img {margin:0 0 0px -60px;}
 .bottls .it-3 img {margin:0 0 0px -70px;} 
-.bottls .btn {display:inline-block;width:auto;padding:15px 60px;}
+.bottls .btn {display:inline-block;width:auto;}
 .bottls .price-new {font:bold 50px/50px 'hagin_caps_mediumregular', Arial, sans-serif;color:#fff;margin:0 0 5px;text-shad-ow:0px 0px 1px #000;}
 .bottls .price-new span {font-size:30px;font-weight:normal;}
 .bottls .price-old {font:20px Tahoma;font-weight:normal;color:#1f6d6d;text-decoration:line-through;}
@@ -336,6 +356,7 @@ button.btn-big {padding-top:0;}
 .order-sale {font:normal 40px/45px 'hagin_caps_mediumregular', Arial, sans-serif;color: #f8b701;display: block;color: #f8b701;text-shadow: 0 2px 2px rgba(0,0,0,0.8);margin: 0 0 30px;}
 .order-sale em {font-style:normal;text-decoration: line-through;}
 
+.order-form {margin:0 0 20px;}
 .order-form input {width:100%;}
 .order-form .btn-big {width:100%;}
 
@@ -376,10 +397,9 @@ button.btn-big {padding-top:0;}
 .header .menu-up-right {float:right;}
 .header .menu-up-right a {font-size:20px;padding:10px;display:inline-block;color:#dbc5b8;position:relative;}
 .header .menu-up-right a b {position:absolute;border-radius:20px;background:#60b234;color:#fff;font-size:10px;display:block;width:15px;height:15px;line-height:15px;text-align:center;bottom:9px;right:2px;}
-.header .menu-bars-opener {font-size:20px;color:#dbc5b8;padding:10px;display:inline-block;}
-.header .logo img {height:30px;}
-.header .logo img.logo-short {display:none;height:30px;}
-.header-holder {height:70px;}
+.header .menu-bars-opener {float:left;font-size:20px;color:#dbc5b8;padding:10px;display:inline-block;}
+.header .logo {margin:0;padding:0;font-size:17px;line-height:40px;}
+.header-holder {height:50px;display:none;}
 
 
 @media only screen and (min-width: 1500px) {
@@ -416,6 +436,8 @@ button.btn-big {padding-top:0;}
 	.description .promo {padding-left:70px;padding-right:70px;}
 	
 	.zakazat-zvonok {left:300px;}
+	
+	.order {padding:20px 10px;}
 }
 
 @media only screen and (max-width: 1000px)
@@ -425,7 +447,6 @@ button.btn-big {padding-top:0;}
 	
 	.description .promo {padding-left:30px;padding-right:30px;}
 	
-	.order {padding:20px 10px;}
 }
 
 @media only screen and (max-width: 900px)
@@ -453,18 +474,21 @@ button.btn-big {padding-top:0;}
 
 @media only screen and (max-width: 767px)
 {
+	.logo {padding:0;margin:0 0 20px;}
+	
+	.bottls {padding:0;}
 	.bottls .it {width:350px;}
 	
-	.info {padding:20px 30px;}
+	.info {padding:20px 20px;}
 	.info h2 {font-size:30px;line-height:1;}
 	
-	.composition {padding:20px 30px;}
+	.composition {padding:20px 20px;}
 	.composition h2 {font-size:40px;}
 	
 	.page {background:none;padding:0;}
-	.page .grad {padding:20px 30px;}
+	.page .grad {padding:20px 20px;}
 	
-	.text-important {padding:20px 30px;}
+	.text-important {padding:20px 20px;}
 	
 	.reviews h2 {font-size:30px;text-align:center;}
 	
@@ -475,18 +499,43 @@ button.btn-big {padding-top:0;}
 	.footer div, .footer p {text-align:center;}
 	
 	.header {display:block;}
-	.menu-top {display:none;}  
-}
+	.header-holder {height:50px;display:block;}
+	.menu-top {display:none;}
+	
+	.zakazat-zvonok {display:none;}  
+	
+	.header-part .list {display:none;}
+	.header-part .price {display:none;}
+	.header-part .guaranty {display:none;}
+	.header-part .order-now {display:none;}
+	
+	.bottls .it-3 {display:none;}
 
-@media only screen and (max-width: 720px)
-{
 	.header-sticker {display:none;}
 	.header-girl {display:none;}
 	.header-decor01 {display:none;}
 	.header-note {display:none;}
+	
+	.star-text-2 {display:none;}
+	
+	.num-list {overflow:visible;}
+	
+	.comments .list {margin:0 0 20px;}
 }
 
 @media only screen and (max-width: 680px)
 {
 	.reviews-list .reviews-list-item {width:auto;border:none;}
+}
+
+@media only screen and (max-width: 450px)
+{
+	.composition img {margin:0 20px 20px 0;}
+	.composition h3, .composition p {margin-left:0;}
+	.composition .it {padding:10px 0 0;}
+}
+
+@media only screen and (max-width: 400px)
+{
+	.info img {float:none;margin:0 auto 20px;display:block;}
 }

@@ -34,7 +34,7 @@ $comments_success = Yii::$app->session->getFlash('comments-success');
 					<?= $form->field($model, 'name')?>
 					<?= $form->field($model, 'text')->textArea(["rows"=>5])?>
 					<?= $form->field($model, 're_captcha')->widget(\himiklab\yii2\recaptcha\ReCaptcha::className())->label("") ?>
-					<div class="submit"><button class="btn btn-green" type="submit">Отправить</button></div>
+					<div class="submit"><button class="btn btn-red btn-big btn-green" type="submit">Отправить</button></div>
 				<?php ActiveForm::end(); ?>
 			</div>
 		<?}?>

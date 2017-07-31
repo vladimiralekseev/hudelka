@@ -1,5 +1,5 @@
+<a name="how-to-order" id="how-to-order"></a>
 <div class="how-we-work">
-	<a name="how-to-order" id="how-to-order"></a>
 	<h2>Как заказать сироп для похудения?</h2>
 	<div class="ls">
 		<div class="it">

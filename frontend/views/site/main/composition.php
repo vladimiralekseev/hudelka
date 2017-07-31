@@ -1,5 +1,5 @@
+<a name="composition" id="composition"></a>
 <div class="composition">
-	<a name="composition" id="composition"></a>
 	<h2>Состав сиропа</h2>
 	<div class="list">
 		<div class="it">

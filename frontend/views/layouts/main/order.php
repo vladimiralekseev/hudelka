@@ -1,6 +1,7 @@
-<a name="order" id="order"></a>
+
 <div class="order">
 	<h2>Попрощайтесь с лишними килограммами <span class="mark-new">навсегда!</span></h2>
+	<div class="rows">
 	<div class="row">
 		<div class="col-sm-6">
             <h3>Заказать</h3>
@@ -14,6 +15,7 @@
             <h4>Оплата при получении наличными Доставка по всей Украине от 3-х дней.<br><small>Стоимость доставки по всей Украине – 30 грн.</small></h4>
 	</div>
 	<div class="col-sm-6">
+			<a name="order" id="order"></a>
             <div class="timer">
               <strong class="timer__txt">До завершения акции осталось</strong>
               <div class="timer__box">
@@ -24,7 +26,7 @@
                         <span id="hour_0">0</span>
                       </span>
                       <span class="position">
-                        <span id="hour_1">5</span>
+                        <span id="hour_1">0</span>
                       </span>
                     </span>
                     <span class="timer__txt">часов</span>
@@ -36,7 +38,7 @@
                         <span id="min_0">0</span>
                       </span>
                       <span class="position">
-                        <span style="margin-top: 0px; opacity: 1;" id="min_1">3</span>
+                        <span id="min_1">0</span>
                       </span>
                     </span>
                     <span class="timer__txt">Минут</span>
@@ -45,10 +47,10 @@
                   <span class="countSeconds">
                     <span id="sec" class="wrap">
                       <span class="position">
-                        <span style="margin-top: 0px; opacity: 1;" id="sec_0">5</span>
+                        <span id="sec_0">0</span>
                       </span>
                       <span class="position">
-                        <span style="margin-top: -2.44718px; opacity: 0.877641;" id="sec_1">8</span>
+                        <span id="sec_1">0</span>
                       </span>
                     </span>
                     <span class="timer__txt">секунд</span>
@@ -99,6 +101,7 @@
 
             </form></div>
 		</div>
+	</div>
 	</div>
 	<h4 class="white">Отправка заказов в Россию и страны СНГ ТОЛЬКО ПО ПРЕДОПЛАТЕ!!!</h4>
     
