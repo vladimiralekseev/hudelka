@@ -33,6 +33,18 @@ class Orders extends \yii\db\ActiveRecord
     const STATUS_END = 40;
     const STATUS_RETURN = 50;
     
+    const COUNT_1 = 1;
+    const COUNT_2 = 2;
+    const COUNT_3 = 3;
+    
+    const PRICE_UA_1 = 580;
+    const PRICE_UA_2 = 1160;
+    const PRICE_UA_3 = 1740;
+    
+    const DISCOUNT_PRICE_UA_1 = 290;
+    const DISCOUNT_PRICE_UA_2 = 450;
+    const DISCOUNT_PRICE_UA_3 = 590;
+    
     public static function getStatusList()
 	{
 		return array(
@@ -115,5 +127,39 @@ class Orders extends \yii\db\ActiveRecord
                 'value' => new Expression('NOW()'),
             ],
         ];
+    }
+    
+    public static function getPriceUaList()
+    {
+        return [
+            self::PRICE_UA_1      => Yii::t('app', 'грн'),
+            self::PRICE_UA_2      => Yii::t('app', 'грн'),
+            self::PRICE_UA_3      => Yii::t('app', 'грн'),
+        ];
+    }
+    
+    public static function getDiscountPriceUaList()
+    {
+        return [
+            self::DISCOUNT_PRICE_UA_1      => Yii::t('app', 'грн'),
+            self::DISCOUNT_PRICE_UA_2      => Yii::t('app', 'грн'),
+            self::DISCOUNT_PRICE_UA_3      => Yii::t('app', 'грн'),
+        ];
+    }
+    
+    public static function getCountList()
+    {
+        return [
+            self::COUNT_1      => Yii::t('app', '1 упаковка - '.self::DISCOUNT_PRICE_UA_1.' грн'),
+            self::COUNT_2      => Yii::t('app', '2 упаковка - '.self::DISCOUNT_PRICE_UA_2.' грн'),
+            self::COUNT_3      => Yii::t('app', '3 упаковка - '.self::DISCOUNT_PRICE_UA_3.' грн'),
+        ];
+    }
+    
+    public static function getCountValue($val)
+    {
+        $ar = self::getCountList();
+        
+        return isset($ar[$val]) ? $ar[$val] : $val;
     }
 }

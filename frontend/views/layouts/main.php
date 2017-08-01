@@ -13,6 +13,8 @@ use frontend\assets\AppAsset;
 use common\widgets\Alert;
 use yii\widgets\Menu;
 
+use frontend\widgets\order\OrderWidget;
+
 $OrderPhoneForm = Yii::$app->params["OrderPhoneForm"];
 $OrderForm = Yii::$app->params["OrderForm"];
 
@@ -42,7 +44,6 @@ $isMainPage = $this->context->module->controller->id == 'site' && $this->context
 <head>
     <meta charset="<?= Yii::$app->charset ?>">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="google-site-verification" content="4QnHo5vDfpP4GM_WYaAPzcrGpMkktl9w4BtaFYYAqjI" />
     <?= Html::csrfMetaTags() ?>
     <title><?= Html::encode($this->title) ?></title>
@@ -105,7 +106,7 @@ $isMainPage = $this->context->module->controller->id == 'site' && $this->context
 				<div class="text-center order-now">
 					<a class="btn btn-red btn-big" href="#order">Заказать сейчас</a>
 				</div>
-				<div class="guaranty" id="guaranty-open"><a class="add-quote" data-toggle="modal" data-target="#guaranty" href="#guaranty"><img src="/i/guaranty-new.png" /></a></div>
+				<div class="guaranty" id="guaranty-open"><a class="add-quote" data-toggle="modal" data-target="#guaranty" href="#guaranty"><img src="/i/guaranty-new.png" alt="Гарантия качества, гарантия возврата денег" /></a></div>
 				<?php Modal::begin([
                     'header' => '<h3>'.\Yii::t('app', 'Гарантия возврата денег').'</h3>',
                     'id' => 'guaranty',
@@ -121,17 +122,17 @@ $isMainPage = $this->context->module->controller->id == 'site' && $this->context
 		<?php if (!$isMainPage) {?>
 			<div class="header-note-line"></div>
 		<?php }?>
+		
     	<?= $content ?>
     	
-		
-		<?= $this->render('main/order') ?>
+		<?= (new OrderWidget)->run() ?>
 			
-		<div class="zakazat-zvonok" id="zakazat-zvonok"><img src="/i/zakazat_zvonok.png"></div>
+		<div class="zakazat-zvonok" id="zakazat-zvonok"><img src="/i/zakazat_zvonok.png" alt="Обратный звонок"/></div>
     </div>
     <div id="holder"></div>
 </div>
-<div class="footer">
-	<div class="fixed">
+<div class="fixed">
+	<div class="footer">
 	<div class="rows">
 	<div class="row">
 		<div class="col-sm-6">

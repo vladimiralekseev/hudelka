@@ -1,4 +1,4 @@
-<a name="reviews" id="reviews"></a>
+<a id="reviews"></a>
     <div class="reviews">
         <h2>Отзывы</h2>
               <ul class="reviews-list">

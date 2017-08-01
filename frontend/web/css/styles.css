@@ -178,7 +178,7 @@ div.select:hover input {}
     transform: translate(-50%, -50%) !important;
 }
 
-.footer {padding:20px 0 0;}
+.footer {padding:20px 10px 0;}
 .footer p {margin:0;font-size:12px;line-height:15px;color:#000;font-weight: bold;}
 .footer a {color:#5f4535;}
 .footer a:hover {text-decoration:underline;}
@@ -287,7 +287,7 @@ div.select:hover input {}
 .composition p {font:15px/22px Arial;text-transform:none;color:#000;}
 .composition .it {clear:both;over-flow:hidden;margin:0 0 0px;padding:30px 0 0;}
 
-.page {background:#338d66 url(../img/comments-fon.png);padding:70px 120px;}
+.page {background:#338d66 url(../i/comments-fon.png);padding:70px 120px;}
 .page h1 {font:60px 'hagin_caps_mediumregular', Arial, sans-serif;text-align:center;color:#1f6c6c;margin:0 0 30px;}
 .page h2 {font:50px 'hagin_caps_mediumregular', Arial, sans-serif;text-align:center;color:#1f6c6c;margin:0 0 30px;}
 .page h3 {font:40px 'hagin_caps_mediumregular', Arial, sans-serif;text-align:center;color:#1f6c6c;margin:0 0 30px;}
@@ -315,11 +315,11 @@ div.select:hover input {}
 .text-important h2 {font:normal 36px/42px 'hagin_caps_mediumregular', Arial, sans-serif;color: #1f6c6c;text-align:center;margin: 0 0 20px;}
 .text-important p {font-size:14px;line-height:19px;margin:0 0 10px;}
 
-.how-we-work {text-align:center;padding:0 0 20px 0;background:#592816 url('../img/how-we-work-fon.png') repeat 0 0;box-shadow: 0 10px 10px rgba(0,0,0,0.5);}
+.how-we-work {text-align:center;padding:0 0 20px 0;background:#592816 url('../i/how-we-work-fon.png') repeat 0 0;box-shadow: 0 10px 10px rgba(0,0,0,0.5);}
 .how-we-work h2 {color:#4b2a04;background:#fce38e;font:bold 50px/50px 'hagin_caps_mediumregular', Arial, sans-serif;padding:20px 0;margin:0 0 30px;}
 .how-we-work .it {display:inline-block;color:#fff;padding:0 80px;margin:0 0 20px;width:360px;position:relative;}
 .how-we-work .it img {border-radius:100px;border:5px solid #fce38e;}
-.how-we-work .it:after {position:absolute;top:60px;left:-44px;display:block;content:"";width:87px;height:73px;background:url('../img/how-we-work-sep.png') no-repeat 0 0;}
+.how-we-work .it:after {position:absolute;top:60px;left:-44px;display:block;content:"";width:87px;height:73px;background:url('../i/how-we-work-sep.png') no-repeat 0 0;}
 .how-we-work .it:first-child:after {display:none;}
 .how-we-work .it .title {padding:5px 0 0;}
 
@@ -350,6 +350,8 @@ div.select:hover input {}
 .order h4 {font:normal 21px/24px 'hagin_caps_mediumregular', Arial, sans-serif;color: #f8b701;margin: 0 0 5px;text-transform: uppercase;}
 .order h4 small {font-size:18px;color:#f8b701;}
 .order h4.white {color:#fff;}
+
+.order .result-form {padding:250px 0;}
 
 .order-price {font:bold 80px/90px 'hagin_caps_mediumregular', Arial, sans-serif;color:#fff;display:block;text-shadow:0 2px 2px rgba(0,0,0,0.8);margin: 0 0 -6px;padding: 21px 0 0;}
 
@@ -533,6 +535,8 @@ div.select:hover input {}
 	.composition img {margin:0 20px 20px 0;}
 	.composition h3, .composition p {margin-left:0;}
 	.composition .it {padding:10px 0 0;}
+	
+	.order .result-form {padding:100px 0;}
 }
 
 @media only screen and (max-width: 400px)
