@@ -220,6 +220,9 @@ div.select:hover input {}
 
 .header-ttl {font:48px/56px 'hagin_caps_mediumregular', Arial, sans-serif;color:#1f6d6d;text-shadow:0 1px 1px #8fed67;text-transform:uppercase;margin:0 0 28px;text-align:center;}
 
+.list-articles .it {margin:0 0 50px;}
+.list-articles .it a {color:#1f6c6c;display:block;margin:0 0 10px;font-size:22px;}
+
 .price {font:48px/54px 'hagin_caps_mediumregular', Arial, sans-serif;overflow:hidden;text-transform:uppercase;margin:0 0 25px;padding:0 0 0 0px;}
 .price li {float:left;width:48%;padding:0;margin:0;text-align:center;color:#fff;}
 .price li:first-child {color:#1f6d6d;}
