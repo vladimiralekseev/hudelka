@@ -39,7 +39,7 @@
 		</div>
 	</div>
 	<div class="important">
-		<a href="/img/certificate-big.png" data-lightbox="image-1" data-title="Одобрено министерством охраны здоровья украины"><img src="/img/certificate.png" alt="Сироп для похудения Стройнитин - одобрен министерством охраны здоровья Украины"></a>
+		<a href="/i/certificate-big.png" data-lightbox="image-1" data-title="Одобрено министерством охраны здоровья украины"><img src="/i/certificate.png" alt="Сироп для похудения Стройнитин - одобрен министерством охраны здоровья Украины"></a>
 		<p>Одобрено министерством здоровья Украины. гост 28499-90</p>
 	</div>
 </div>

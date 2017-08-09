@@ -25,7 +25,7 @@ AppAsset::register($this);
 $menuItems = [
     ['label' => 'Cироп', 'url' => ['site/index', '#'=>'']],
     ['label' => 'Польза', 'url' => ['site/index', '#'=>'effect']],
-    ['label' => 'Экспертное мнение', 'url' => ['site/index', '#'=>'expert']],
+    //['label' => 'Экспертное мнение', 'url' => ['site/index', '#'=>'expert']],
     ['label' => 'Состав', 'url' => ['site/index', '#'=>'composition']],
     ['label' => 'Свойства', 'url' => ['site/index', '#'=>'properties']],
     ['label' => 'Отзывы', 'url' => ['site/index', '#'=>'reviews']],

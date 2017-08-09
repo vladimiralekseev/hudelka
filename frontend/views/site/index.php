@@ -7,6 +7,7 @@ $this->registerMetaTag(["name"=>"description", "content"=>"Натуральны�
 ?>
 
 <?= $this->render('main/description') ?>
+<?php //= $this->render('main/expert') ?>
 <?= $this->render('main/information') ?>
 <?= $this->render('main/composition') ?>
 <?= $this->render('main/comments') ?>
