@@ -14,6 +14,7 @@ use common\widgets\Alert;
 use yii\widgets\Menu;
 
 use frontend\widgets\order\OrderWidget;
+use frontend\widgets\callBack\CallBackWidget;
 
 $OrderPhoneForm = Yii::$app->params["OrderPhoneForm"];
 $OrderForm = Yii::$app->params["OrderForm"];
@@ -127,7 +128,7 @@ $isMainPage = $this->context->module->controller->id == 'site' && $this->context
     	
 		<?= (new OrderWidget)->run() ?>
 			
-		<div class="zakazat-zvonok" id="zakazat-zvonok"><img src="/i/zakazat_zvonok.png" alt="Обратный звонок"/></div>
+		<div class="zakazat-zvonok" data-toggle="modal" data-target="#call-back" href="#call-back"><img src="/i/zakazat_zvonok.png" alt="Обратный звонок"/></div>
     </div>
     <div id="holder"></div>
 </div>
@@ -162,7 +163,13 @@ $isMainPage = $this->context->module->controller->id == 'site' && $this->context
 
 </script>
 
-
+<?php Modal::begin([
+    'header' => '<h3 class="text-center">'.\Yii::t('app', 'ЗАКАЗАТЬ ОБРАТНЫЙ ЗВОНОК').'</h3>',
+    'id' => 'call-back',
+    'options' =>['class'=>'modal-call-back'],
+]);?>
+<?= (new CallBackWidget)->run();?>
+<?php Modal::end();?>
 
 <?php $this->endBody() ?>
 </body>

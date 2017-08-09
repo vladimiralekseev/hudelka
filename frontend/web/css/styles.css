@@ -406,9 +406,10 @@ div.select:hover input {}
 .header .logo {margin:0;padding:0;font-size:17px;line-height:40px;}
 .header-holder {height:50px;display:none;}
 
+.modal-call-back .modal-dialog  {max-width:400px;}
 
 @media only screen and (min-width: 1500px) {
-	.zakazat-zvonok {position:fixed;top:100px;left:auto;right:10px;cursor:pointer;z-index:1000000;}	
+	.zakazat-zvonok {position:fixed;top:100px;left:auto;right:10px;cursor:pointer;z-index:1040;}	
 }
 
 @media only screen and (max-width: 1200px)

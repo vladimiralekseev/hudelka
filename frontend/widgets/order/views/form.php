@@ -36,18 +36,7 @@ use common\models\Orders;
             	<?php $form = ActiveForm::begin(['method'=>'post', 'action' => ['site/index', '#'=>'order'], 'id'=>'order-main']); ?>
 			
 				<div class="form">
-				<?php /*?>
-                             <div class="form__row">
-                <div class="b-input-i">
-                                    <select class="b-input" name="OrderForm[count]" id="count">
 
-<option selected="selected" data-price1="290" data-price3="580" data-price2="580" data-pricecurrency="грн" value="1">1 упаковка</option>
-<option data-price1="450" data-price3="1160" data-price2="1160" data-pricecurrency="грн" value="2">2 упаковки</option>
-<option data-price1="590" data-price3="1740" data-price2="1740" data-pricecurrency="грн" value="3">3 упаковки</option>
-                                   </select>
-                </div>
-              </div>
-              <?*/?>
               	<?= $form->field($OrderForm, 'count')->dropDownList($OrderForm->getCountList())->label(false);?>
 
                 <?= $form->field($OrderForm, 'fio')->textInput(['placeholder' => 'ФИО'])->label(false) ?>
