@@ -16,6 +16,9 @@ return [
 	        'class' => 'webvimark\modules\UserManagement\UserManagementModule',
 	    ],
 	],
+    'aliases' => [
+        '@webvimark/modules/UserManagement' => '@vendor/webvimark/module-user-management',
+    ],
     'components' => [
         'log' => [
             'targets' => [
